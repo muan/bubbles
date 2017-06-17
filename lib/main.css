@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.start-button {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  padding: 20px 36px;
+  border-radius: 20px;
+  background-color: hsla(250, 100%, 40%, 0.5);
+  color: #fff;
+}
+
+.dot {
+  margin: -15px;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 40%;
+  position: absolute;
+  animation: drop .3s;
+  font-size: 3px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+@keyframes drop {
+  0% { opacity: 0; transform: scale(0.1, 0.1);}
+  100% { opacity: 1; }
+}
+
+.dot:focus {
+  opacity: 0.5;
+  outline: none;
+}
